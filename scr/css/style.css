@@ -1,0 +1,155 @@
+
+body{
+    background-image: url(../imagens/background-1.2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lora', monospace; 
+    color: rgba(255, 223, 223, 0.782);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: #070d12ee;
+    width: 370px;
+    border: 5px solid #4a2424;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .info-p{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .info-p img{
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    border: 4px solid #4a2424
+}
+
+.card .info-p .name{
+    font-size: 26px;
+    color: rgba(217, 160, 160, 0.782);
+}
+
+.card .info-p .about{
+    font-size: 15px;
+}
+
+.card .content{
+    margin-top: 15px;
+}
+
+.card .abas{
+    display: flex;
+}
+
+.card .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card .abas img{
+    width: 30px;
+}
+
+.card .abas .aba.select{
+    background-color: #1b1818d2;
+}
+
+.card .info-abas{
+    background-color: #1b1818d2;
+}
+
+.card .abas .aba:hover{
+    background-color: #352c2cd2;
+}
+
+.info-abas .info{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.info-abas .info.select{
+    display: block;
+}
+
+.info-abas .sub-titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: rgba(217, 160, 160, 0.782);
+ }
+
+.info-abas .description{
+    font-size: 20px;
+    padding-right: 15px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.info-abas .description::first-letter{
+    padding-left: 15px;
+}
+
+.info-abas .description span{
+    color: #8b4242;
+}
+
+.info-abas .p::first-letter{
+    padding-left: 15px;
+    gap: 10px
+}
+
+.card .info-p span{
+    color: #8b4242;
+}
+
+.social-midia{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-height: 180px;
+    overflow: auto;
+}
+
+.social-midia li a{
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-midia .wiki{
+    background-color: #545454;
+}
+
+.social-midia .crunchyrol{
+    background-color: #653f3f;
+}
+
+.social-midia .manga{
+    background-color: #2e4c5b;
+}
+
+.social-midia li a:hover{
+opacity: 0.8;
+}
